@@ -10,6 +10,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+    line-height: 2.8rem;
+    text-align: center;
 }
 .row1 > div {
 	margin: auto;
@@ -19,10 +21,8 @@
     border: 1px solid #000;
 }
 .row2 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+    line-height: 2.8rem;
+    text-align: center;
 }
 .row2 > div {
 	margin: 5px;
@@ -47,16 +47,55 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+    line-height: 2.8rem;
+    text-align: center;
 }
 .row1 > div:hover {
 	background-color: #000;
 	color: #fff;
+    cursor: pointer;
+    
 }
 .row2 > div:hover {
+    cursor: pointer;
 	background-color: #000;
 	color: #fff;
 }
 .row3 > div:hover {
+    cursor: pointer;
 	background-color: #000;
 	color: #fff;
+ 
+
+}
+.guess-board {
+    max-width: fit-content;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.row-of-word {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2.8rem;
+    text-align: center;
+}
+.row-of-word > div {
+    margin: 5px;
+    width: 3.2rem;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    
+   
+    line-height: 2.8rem;
+    text-align: center;
+  
 }
