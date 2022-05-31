@@ -12,13 +12,22 @@ function KeyBoardLetter({ letter }) {
 		setCurWordPosition,
 	} = useContext(GameContext);
 	const displayLetter = () => {
-		if (letter ==="Ent"){
-		if (curLetterPosition > 4){
-			setCurWordPosition(curWordPosition + 1)
-			setCurLetterPosition(0)
+		if (letter === "Ent") {
+			if (curLetterPosition > 4) {
+				setCurWordPosition(curWordPosition + 1);
+				setCurLetterPosition(0);
+			}
+			return;
 		}
-		return
-	}
+		if (letter === "Del") {
+			if (curLetterPosition === 0) return;
+			const newBoardState = [...boardState];
+			newBoardState[curWordPosition][curLetterPosition-1] = "";
+			setCurLetterPosition(curLetterPosition - 1);
+			setBoardState(newBoardState);
+			return
+		}
+
 		const newBoardState = [...boardState];
 		newBoardState[curWordPosition][curLetterPosition] = letter;
 		setBoardState(newBoardState);
