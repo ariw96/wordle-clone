@@ -13,42 +13,43 @@
     line-height: 2.8rem;
     text-align: center;
 }
+.row2 {
+	line-height: 2.8rem;
+	text-align: center;
+}
 .row1 > div {
+	background-color: gainsboro;
 	margin: auto;
 	width: 3rem;
 	height: 3rem;
 	border-radius: 10px;
     border: 1px solid #000;
 }
-.row2 {
-    line-height: 2.8rem;
-    text-align: center;
-}
 .row2 > div {
+	background-color: gainsboro;
 	margin: 5px;
 	width: 3.2rem;
 	height: 3rem;
     border-radius: 10px;
-	background-color: #fff;
 	border: 1px solid #000;
 	display: inline-block;
-}
-.row3 > div {
-	margin: 5px;
-	width: 3.4rem;
-	height: 3rem;
-	border-radius: 10px;
-	background-color: #fff;
-	border: 1px solid #000;
-	display: inline-block;
-	text-align: center;
 }
 .row3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    line-height: 2.8rem;
-    text-align: center;
+	line-height: 2.8rem;
+	text-align: center;
+}
+.row3 > div {
+	background-color: gainsboro;
+	margin: 5px;
+	width: 3.4rem;
+	height: 3rem;
+	border-radius: 10px;
+	border: 1px solid #000;
+	display: inline-block;
+	text-align: center;
 }
 .row1 > div:hover {
 	background-color: #000;
@@ -83,19 +84,40 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    line-height: 2.8rem;
+    
     text-align: center;
 }
-.row-of-word > div {
+.letter {
     margin: 5px;
     width: 3.2rem;
     height: 3rem;
     border-radius: 5px;
     background-color: #fff;
     border: 1px solid #000;
-    
-   
-    line-height: 2.8rem;
+    font-size: 2rem;
+	font-weight: bold;
+    line-height:2.5rem;
     text-align: center;
-  
+	
+}
+#correct{
+	background-color: rgb(45, 210, 45);
+}
+#almost{
+	background-color: rgb(237, 230, 25);
+}
+#wrong{
+	background-color: rgb(135, 128, 128);
+}
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.keyboard{
+		display: none;
+	}
+	.row-of-word>div{
+		width: 2.5rem;
+		height: 2.5rem;
+	} 
+
+
 }
