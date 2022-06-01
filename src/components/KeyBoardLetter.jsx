@@ -2,7 +2,7 @@ import React from "react";
 import { GameContext } from "./GameContext";
 import { useContext } from "react";
 
-function KeyBoardLetter({ letter }) {
+function KeyBoardLetter({ letter,id }) {
 	const {
 		addLetter,
 		deleteLetter,
@@ -19,7 +19,7 @@ function KeyBoardLetter({ letter }) {
 		}
 	};
 	return (
-		<div className="key" onClick={displayLetter}>
+		<div className="key" onClick={displayLetter} id={id}>
 			{letter}
 		</div>
 	);

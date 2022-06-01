@@ -79,13 +79,15 @@
     text-align: center;
     border: 1px solid #000;
     border-radius: 10px;
-}
-.row-of-word {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+   
     
     text-align: center;
+}
+.word0 ,.word1 ,.word2 ,.word3 ,.word4 ,.word5  {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .letter {
     margin: 5px;
@@ -114,7 +116,7 @@
 	.keyboard{
 		display: none;
 	}
-	.row-of-word>div{
+	.guess-board>div{
 		width: 2.5rem;
 		height: 2.5rem;
 	} 
