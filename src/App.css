@@ -6,120 +6,87 @@
 	padding: 15px;
 	text-align: center;
 }
-.row1 {
+.row-keyboard-0 .row-keyboard-1,
+.row-keyboard-2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    line-height: 2.8rem;
-    text-align: center;
-}
-.row2 {
-	line-height: 2.8rem;
 	text-align: center;
 }
-.row1 > div {
+
+.row-keyboard-0 > div,
+.row-keyboard-1 > div,
+.row-keyboard-2 > div {
+	line-height: 2.8rem;
 	background-color: gainsboro;
-	margin: auto;
+	margin: 5px;
 	width: 3rem;
 	height: 3rem;
 	border-radius: 10px;
-    border: 1px solid #000;
-}
-.row2 > div {
-	background-color: gainsboro;
-	margin: 5px;
-	width: 3.2rem;
-	height: 3rem;
-    border-radius: 10px;
 	border: 1px solid #000;
 	display: inline-block;
+	text-align: center;
 }
-.row3 {
+.row-keyboard-1 > div,
+.row-keyboard-2 > div {
+	width: 3.35rem;
+}
+.row-keyboard-1 > div:hover,
+.row-keyboard-2 > div:hover,
+.row-keyboard-0 > div:hover {
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+}
+.guess-board {
+	max-width: fit-content;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 10px;
+	text-align: center;
+}
+.word0,
+.word1,
+.word2,
+.word3,
+.word4,
+.word5 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	line-height: 2.8rem;
-	text-align: center;
-}
-.row3 > div {
-	background-color: gainsboro;
-	margin: 5px;
-	width: 3.4rem;
-	height: 3rem;
-	border-radius: 10px;
-	border: 1px solid #000;
-	display: inline-block;
-	text-align: center;
-}
-.row1 > div:hover {
-	background-color: #000;
-	color: #fff;
-    cursor: pointer;
-    
-}
-.row2 > div:hover {
-    cursor: pointer;
-	background-color: #000;
-	color: #fff;
-}
-.row3 > div:hover {
-    cursor: pointer;
-	background-color: #000;
-	color: #fff;
- 
-
-}
-.guess-board {
-    max-width: fit-content;
-    
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #000;
-    border-radius: 10px;
-
-   
-    
-    text-align: center;
-}
-.word0 ,.word1 ,.word2 ,.word3 ,.word4 ,.word5  {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .letter {
-    margin: 5px;
-    width: 3.2rem;
-    height: 3rem;
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid #000;
-    font-size: 2rem;
+	margin: 5px;
+	width: 3.2rem;
+	height: 3rem;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #000;
+	font-size: 2rem;
 	font-weight: bold;
-    line-height:2.5rem;
-    text-align: center;
-	
+	line-height: 2.5rem;
+	text-align: center;
 }
-#correct{
+#correct {
 	background-color: rgb(45, 210, 45);
 }
-#almost{
+#almost {
 	background-color: rgb(237, 230, 25);
 }
-#wrong{
+#wrong {
 	background-color: rgb(135, 128, 128);
 }
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
-	.keyboard{
+	.keyboard {
 		display: none;
 	}
-	.guess-board>div{
+	.letter {
 		width: 2.5rem;
 		height: 2.5rem;
-	} 
-
-
+	}
 }
